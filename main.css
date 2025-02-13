@@ -14,6 +14,7 @@ body {
     padding-bottom: 2rem; /* Adds some space at the bottom */
   }
   
+  
   .book-image {
     position: absolute;
     bottom: 0.5rem; /* Small margin at the bottom */
@@ -21,8 +22,21 @@ body {
     transform: translateX(-50%);
     width: 80%; 
     height: auto;
+    animation: zoomInOut 3s ease-in-out infinite;
   }
-  
+  /* Keyframe animation for zoom in and out effect */
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1); /* Original size */
+    }
+    50% {
+        transform: scale(1.2); /* Zoom in by 20% */
+    }
+    100% {
+        transform: scale(1); /* Return to original size */
+    }
+}
+
   .cover {
     background-color: #450101;
     color: #fff;
