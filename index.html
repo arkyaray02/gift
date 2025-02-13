@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Click on the image below to view gift 🎁❤️✨</h1>
+
+    <br><br>
+
+    <!-- Link to main.html when clicking on the image -->
+    <a href="main.html" onclick="playAudio()">
+        <img src="heart.png" alt="Click me" class="zoom-image">
+    </a>
+
+    <!-- Hidden audio element -->
+    <audio id="background-audio" src="./aashiqui.mp3" preload="auto"></audio>
+
+    <script>
+        // Function to play audio when the image is clicked
+        function playAudio() {
+            var audio = document.getElementById('background-audio');
+            audio.play(); // Play the audio
+        }
+    </script>
+
+</body>
+</html>

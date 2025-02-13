@@ -1,0 +1,33 @@
+/* Basic page styling */
+body {
+    background-color: #f00;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    border: 5px solid yellow;
+    display: inline-block;
+    padding: 10px; 
+}
+
+/* Styling for the image with continuous zoom effect */
+.zoom-image {
+    width: 300px; /* Set a base width */
+    animation: zoomInOut 3s ease-in-out infinite; /* Apply animation */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+/* Keyframe animation for zoom in and out effect */
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1); /* Original size */
+    }
+    50% {
+        transform: scale(1.2); /* Zoom in by 20% */
+    }
+    100% {
+        transform: scale(1); /* Return to original size */
+    }
+}
